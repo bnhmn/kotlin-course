@@ -3,8 +3,9 @@ package kotlincourse.j_classes
 /* Access levels:
 - public
 - protected
-- private  (elements are visible inside the file they are declared)
+- private  (top level elements are visible inside the file; methods and properties inside the class they are declared)
 - internal (elements are visible inside the module they are declared (IntelliJ project, Maven project))
+
 Kotlin is public by default!
 Classes are public final by default!
  */
