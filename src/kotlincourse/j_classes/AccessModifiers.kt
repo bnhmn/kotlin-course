@@ -9,9 +9,6 @@ package kotlincourse.j_classes
 Kotlin is public by default!
 Classes are public final by default!
  */
-
-// Kotlin is public by default!
-
 data class PublicEmployee(val id: Int) {}
 
 private data class PrivateEmployee(val id: Int) {}
