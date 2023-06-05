@@ -13,14 +13,11 @@ open class Shape        ✔
 abstract class Shape    ✔
 interface Shape         ✔
  */
-
-
 abstract class Shape {
     abstract fun area(): Double
 
-    open fun print() {  // You have to explicitly declare a method 'open' or 'abstract', else you cannot override it!
-        println("Area: ${this.area()} m²")
-    }
+    // You have to explicitly declare a method 'open' or 'abstract', else you cannot override it!
+    open fun print() = println("Area: ${this.area()} m²")
 }
 
 class Square(val a: Number) : Shape() {                     // Must call super constructor
@@ -33,17 +30,10 @@ class Circle(val r: Number) : Shape() {
     override fun print() = println("Circle(r=$r): ${this.area()} m²")
 }
 
-class Triangle(val g: Number, val hg: Number) : Shape() {
-    override fun area(): Double = g.toDouble() * hg.toDouble() / 2
-    override fun print() = println("Triangle(g=$g, hg=$hg): ${this.area()} m²")
-}
-
-
 fun main() {
     val shapes = listOf(
         Square(2),
         Circle(1),
-        Triangle(1, 2)
     )
     shapes.forEach { it.print() }
 }

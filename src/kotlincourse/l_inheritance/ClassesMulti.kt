@@ -1,7 +1,8 @@
 package kotlincourse.l_inheritance
 
-// Multi level class inheritance
-
+/*
+Multi level class inheritance
+ */
 abstract class AShape {
     abstract fun area(): Double
     abstract fun print()
