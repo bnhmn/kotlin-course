@@ -6,8 +6,9 @@ package kotlincourse.j_classes
 - private  (top level elements are visible inside the file; methods and properties inside the class they are declared)
 - internal (elements are visible inside the module they are declared (IntelliJ project, Maven project))
 
-Kotlin is public by default!
-Classes are public final by default!
+- Kotlin Classes and methods are public final by default!
+- Top level functions are public by default!
+
  */
 data class PublicEmployee(val id: Int) {}
 

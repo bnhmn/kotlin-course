@@ -18,6 +18,7 @@ fun main() {
     val car1 = Car("Mercedes", "A-Class")
     val car2 = Car("Mercedes", "A-Class")
     val car3 = car1.copy(model = "C-Class")
+
     println("car1: $car1")
     println("car2: $car2")
     println("car3: $car3")
