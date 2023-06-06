@@ -8,8 +8,8 @@ fun main() {
     println("1 + 2 = ${1 + 2}")
 
     // Raw Strings
-    val filePathA = "C:\\Users\benja\\Desktop"
-    val filePathB = """C:\Users\benja\Desktop"""
+    val filePathA = "C:\\\\Users\\benja\\Desktop"
+    val filePathB = """C:\\Users\benja\Desktop"""
     val multiline = """
         <p>
         This is still a $template.
