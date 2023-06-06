@@ -2,29 +2,17 @@ package kotlincourse.n_forloop
 
 import java.time.LocalDate.parse
 
-/*
-In Kotlin, there are no traditional for loops:
-
-for (int i = 0; i <= 10; i++) {
-    System.out.println(i)
-}
-
-Instead, you have to loop over Ranges.
- */
 fun main() {
-    for (num in 0..10) {            // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    for (num in 0..10) {        // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         println("up: $num")
     }
-
-    for (num in 0..10 step 2) {     // 0, 2, 4, 6, 8, 10
+    for (num in 0..10 step 2) { // 0, 2, 4, 6, 8, 10
         println("up step 2: $num")
     }
-
-    for (num in 0 until 10) {       // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    for (num in 0 until 10) {   // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
         println("until: $num")
     }
-
-    for (num in 10 downTo 0) {     // 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+    for (num in 10 downTo 0) {  // 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
         println("down: $num")
     }
 
@@ -44,6 +32,7 @@ fun main() {
     // (x in range a..b) returns true if (x >= a && x <= b)
     require(3 in numberRange)
     require('b' in charRange)
+    require('@' !in charRange)
     require("ABC" in stringRange)
     require("XXXXXXXXXX" in stringRange)    // XXXXXXXXXX > XYZ in dictionary order
     require(parse("2020-06-01") in dateRange)
